@@ -1,0 +1,59 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Nowy Obserwator</title>
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f4f4f4;
+      margin:0; padding:0; } .container { background-color: #ffffff; padding:
+      20px; border-radius: 5px; } .header { padding: 10px; text-align: center; }
+      .header img { max-width: 150px; } .content { padding: 20px; } .button {
+      background-color: #4CAF50; color: #ffffff; padding: 12px 20px;
+      text-decoration: none; border-radius: 5px; font-size: 16px; font-family:
+      Arial, sans-serif; display: inline-block; } .footer { margin-top: 20px;
+      font-size: 12px; color: #777777; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <table width='100%' cellspacing='0' cellpadding='0'>
+      <tr>
+        <td align='center'>
+          <div class='container'>
+            <div class='header'>
+              <img src='cid:logo_cid' alt='Logo' />
+            </div>
+            <div class='content'>
+              <p style='color: #333333; font-size: 24px; margin: 0 0 20px 0;'><b
+                >Cześć {{followedNickname}},</b></p>
+              <p
+                style='color: #555555; font-size: 16px; line-height: 20px; margin: 0 0 30px 0;'
+              >Masz nowego obserwatora! Użytkownik
+                <strong>{{followerNickname}}</strong>
+                zaczął Cię obserwować.</p>
+              <p
+                style='color: #555555; font-size: 16px; line-height: 20px; margin: 0 0 30px 0;'
+              >Aby zobaczyć profil obserwatora, kliknij przycisk poniżej:</p>
+              <p style='text-align:center;'>
+                <a href='{{followerProfileLink}}' class='button'>Zobacz Profil</a>
+              </p>
+              <p
+                style='color: #555555; font-size: 16px; line-height: 20px; margin: 0 0 30px 0;'
+              >Dziękujemy!</p>
+              <p
+                style='color: #777777; font-size: 14px; line-height: 18px; margin: 0;'
+              >
+                <br />
+                Pozdro,<br />
+                <b>Kto pytał?</b>
+              </p>
+            </div>
+            <div class='footer'>
+              ©
+              {{currentYear}}
+              Kto Pytał?
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
